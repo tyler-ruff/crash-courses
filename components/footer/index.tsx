@@ -40,7 +40,7 @@ export default function Footer(){
                 {
                     mainMenu.nav.map((item, index) => {
                         return (
-                            <Link href={item.href || ``} className="link link-hover">
+                            <Link key={index} href={item.href || ``} className="link link-hover">
                                 {item.label}
                             </Link> 
                         );
@@ -54,7 +54,7 @@ export default function Footer(){
                 {
                     destinationsList.map((item, index) => {
                         return (
-                            <Link href="#" className="link link-hover">
+                            <Link key={index} href="#" className="link link-hover">
                                 {item.title} ({item.symbol})
                             </Link> 
                         );

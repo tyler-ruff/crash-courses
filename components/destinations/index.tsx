@@ -18,7 +18,7 @@ export default function Destinations(){
                         <div className="flex flex-wrap justify-center space-x-5">
                             {
                                 destinationsList.map((item, index) => {
-                                    return (<DestinationCard symbol={item.symbol} image={item.image} title={item.title} description={item.description} />)
+                                    return (<DestinationCard key={index} symbol={item.symbol} image={item.image} title={item.title} description={item.description} />)
                                 })
                             }
                         </div>
