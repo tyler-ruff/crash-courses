@@ -58,8 +58,8 @@ export default function Testimonials(){
                         testimonialList.map((item, index) => {
                             return (
                                 current === index && (
-                                    <div className={index === current ? '' : ''}>
-                                    <Card key={index} review={item.review} image={item.image} rating={item.rating} />
+                                    <div key={index} className={index === current ? '' : ''}>
+                                        <Card review={item.review} image={item.image} rating={item.rating} />
                                     </div>
                                 )
                             )
