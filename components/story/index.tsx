@@ -15,11 +15,11 @@ export default function Story(){
                 </div>
 
                 <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
-                    <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full ml-32">
+                    <div className="relative h-64 overflow-hidden h-80 lg:h-full md:ml-32">
                         <Image
-                            alt="Tadd Cooper"
+                            alt="Our Story"
                             src="/images/story-1.png"
-                            className="absolute inset-0 h-full w-3/4"
+                            className="absolute inset-0 h-full lg:w-3/4"
                             width={492}
                             height={521}
                         />
@@ -49,9 +49,9 @@ export default function Story(){
                             </p>
                         </div>
                     </div>
-                    <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full ml-32">
+                    <div className="relative h-64 overflow-hidden h-80 lg:h-full md:ml-32">
                         <Image
-                            alt="Tadd Cooper"
+                            alt="Our Story"
                             src="/images/story-2.png"
                             className="absolute inset-0 h-full w-3/4"
                             width={489}

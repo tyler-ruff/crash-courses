@@ -12,15 +12,12 @@ import { config } from '@/config/site';
 import { Cta } from './cta';
 import Burger from "./burger";
 
-import './header.css';
-
 export default function Header(){
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
     const size = useWindowSize();
 
     const toggleBurger = async() =>{
-        //const drawer = document.querySelector('.drawer-toggle');
         if(!isOpen){
           setIsOpen(true);
           document.body.style.overflowY = "hidden";
@@ -28,9 +25,9 @@ export default function Header(){
           setIsOpen(false);
           document.body.style.overflowY = "scroll";
         }
-      };
+    };
 
-      useEffect(() => {
+    useEffect(() => {
         if(size.width !== null){
             if(size.width >= 767){
                 document.body.style.overflowY = "scroll";
@@ -40,7 +37,7 @@ export default function Header(){
                 }
             }
         }
-      }, [size.width]);
+    }, [size.width]);
 
     return (
         <nav id="nav" role="navigation" className="p-4 bg-gray-100 text-gray-800">
@@ -62,7 +59,6 @@ export default function Header(){
                             return (
                                 <li className="flex" key={index}>
                                     <a aria-label={item.label}
-                                       rel="noopener noreferrer" 
                                        href={item.href}
                                        className={`menu-item flex items-center px-4 hover:text-blue-500 mb-1 border-b-2 font-bold border-transparent ${pathname === item.href && `text-blue-500 border-blue-500`}`}>
                                         {item.label}
@@ -73,7 +69,7 @@ export default function Header(){
                     }
                 </ul>
                 {
-                    mainMenu.cta !== undefined && (<Cta label={mainMenu.cta.label} url={mainMenu.cta.href} />)
+                    mainMenu.cta !== undefined && (<Cta label={mainMenu.cta.label} url={mainMenu.cta.href || ``} />)
                 }
                 <a className="lg:hidden" onClick={() => toggleBurger()}>
                     <Burger active={isOpen} />
@@ -88,10 +84,9 @@ export default function Header(){
                                     return (
                                         <li className="flex" key={index}>
                                             <a aria-label={item.label}
-                                            rel="noopener noreferrer" 
-                                            href={item.href}
-                                            className={`menu-item flex items-center px-4 hover:text-blue-500 mb-1 border-b-2 font-bold border-transparent ${pathname === item.href && `text-blue-500 border-blue-500`}`}>
-                                                {item.label}
+                                                href={item.href}
+                                                className={`menu-item flex items-center px-4 hover:text-blue-500 mb-1 border-b-2 font-bold border-transparent ${pathname === item.href && `text-blue-500 border-blue-500`}`}>
+                                                    {item.label}
                                             </a>
                                         </li>
                                     );

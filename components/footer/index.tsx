@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { brand } from "@/config/site";
 import { mainMenu } from "@/config/menu";
+
 import { destinationsList } from "@/components/destinations/data";
-import Link from "next/link";
 
 export default function Footer(){
     const year = new Date().getFullYear();

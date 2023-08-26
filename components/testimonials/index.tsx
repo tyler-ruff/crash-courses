@@ -1,4 +1,5 @@
 "use client"
+
 import { useState } from 'react';
 import { useSwipeable } from "react-swipeable";
 
@@ -6,8 +7,6 @@ import Heading from '@/components/heading';
 import Card from './card';
 
 import { testimonialList } from './data';
-
-import './testimonials.css';
 
 /**
  * Testimonials component

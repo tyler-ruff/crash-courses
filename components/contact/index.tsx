@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 
 export default function Contact(){
@@ -36,23 +38,23 @@ export default function Contact(){
 
                             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                                 <div>
-                                <label className="sr-only" htmlFor="email">Email</label>
-                                <input
-                                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                    placeholder="Email address"
-                                    type="email"
-                                    id="email"
-                                />
+                                    <label className="sr-only" htmlFor="email">Email</label>
+                                    <input
+                                        className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                                        placeholder="Email address"
+                                        type="email"
+                                        id="email"
+                                    />
                                 </div>
 
                                 <div>
-                                <label className="sr-only" htmlFor="phone">Phone</label>
-                                <input
-                                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                    placeholder="Phone Number"
-                                    type="tel"
-                                    id="phone"
-                                />
+                                    <label className="sr-only" htmlFor="phone">Phone</label>
+                                    <input
+                                        className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                                        placeholder="Phone Number"
+                                        type="tel"
+                                        id="phone"
+                                    />
                                 </div>
                             </div>
 
@@ -76,37 +78,37 @@ export default function Contact(){
                                 </div>
 
                                 <div>
-                                <input
-                                    className="peer sr-only"
-                                    id="option2"
-                                    type="radio"
-                                    tabIndex={-1}
-                                    name="option"
-                                />
+                                    <input
+                                        className="peer sr-only"
+                                        id="option2"
+                                        type="radio"
+                                        tabIndex={-1}
+                                        name="option"
+                                    />
 
-                                <label
-                                    htmlFor="option2"
-                                    className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
-                                    tabIndex={0}
-                                >
+                                    <label
+                                        htmlFor="option2"
+                                        className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
+                                        tabIndex={0}
+                                    >
                                     <span className="text-sm"> Option 2 </span>
                                 </label>
                                 </div>
 
                                 <div>
-                                <input
-                                    className="peer sr-only"
-                                    id="option3"
-                                    type="radio"
-                                    tabIndex={-1}
-                                    name="option"
-                                />
+                                    <input
+                                        className="peer sr-only"
+                                        id="option3"
+                                        type="radio"
+                                        tabIndex={-1}
+                                        name="option"
+                                    />
 
-                                <label
-                                    htmlFor="option3"
-                                    className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
-                                    tabIndex={0}
-                                >
+                                    <label
+                                        htmlFor="option3"
+                                        className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
+                                        tabIndex={0}
+                                    >
                                     <span className="text-sm"> Option 3 </span>
                                 </label>
                                 </div>

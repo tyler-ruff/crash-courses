@@ -1,4 +1,5 @@
 import Heading from "@/components/heading";
+
 import DestinationCard from "./card";
 import { destinationsList } from "./data";
 

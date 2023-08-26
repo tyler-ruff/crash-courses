@@ -1,7 +1,19 @@
-import { social } from "@/config/site";
+"use client"
+
+import { SyntheticEvent, useRef } from "react";
 import Image from "next/image";
 
+import { social } from "@/config/site";
+
 export default function Subscribe(){
+    let formRef = useRef(null);
+    const submitForm = async(e: SyntheticEvent) => {
+        e.preventDefault();
+        const target = e.target as typeof e.target & {
+            email: { value: string };
+        };
+        console.log(target.email.value);
+    };
     return (
         <div style={{backgroundImage: 'url(/images/damaged-glass.jpg'}} className="hero select-none">
             <div className="hero-overlay bg-opacity-20"></div>
@@ -30,7 +42,7 @@ export default function Subscribe(){
                         </div>
 
                         <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
-                            <form className="w-full">
+                            <form onSubmit={submitForm} ref={formRef} className="w-full">
                                 <label htmlFor="UserEmail" className="sr-only"> 
                                     Email 
                                 </label>
@@ -40,11 +52,13 @@ export default function Subscribe(){
                                         <input
                                             type="email"
                                             id="UserEmail"
+                                            name="email"
                                             placeholder="john@example.com"
                                             className="w-full border-none rounded-full sm:rounded-none sm:rounded-l-full focus:border-transparent focus:ring-transparent sm:text-sm py-3 px-5"
                                         />
 
                                         <button
+                                            type="submit"
                                             className="mt-1 w-full rounded-full sm:rounded-none sm:rounded-r-full bg-orange-500 hover:bg-orange-400 group px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
                                             Subscribe
                                         </button>

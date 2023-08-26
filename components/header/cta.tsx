@@ -1,8 +1,8 @@
-"use client"
-
 import Link from 'next/link';
 
-export function Cta(props: any){
+import { ICta } from './data';
+
+export function Cta(props: ICta){
     return (
         <Link 
             aria-label={props.label}

@@ -1,5 +1,6 @@
+import { IHeading } from "./data";
 
-export default function Heading(props: any){
+export default function Heading(props: IHeading){
     return (
         <div className="block w-full text-center">
             <h2 className="uppercase text-lg text-gray-300 pl-3 py-4">
@@ -9,5 +10,5 @@ export default function Heading(props: any){
                 {props.title}
             </h1>
         </div>
-    )
+    );
 }

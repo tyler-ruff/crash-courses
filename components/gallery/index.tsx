@@ -19,7 +19,6 @@ export default function Gallery(){
                                 return (<Image key={index} alt="Gallery Image" width={500} height={500}  className="object-cover w-full bg-gray-500 aspect-square" src={item} />)
                             })
                         }
-                    
                     </div>
                 </div>
             </div>
