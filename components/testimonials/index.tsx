@@ -6,7 +6,7 @@ import { useSwipeable } from "react-swipeable";
 import Heading from '@/components/heading';
 import Card from './card';
 
-import { testimonialList } from './data';
+import { testimonialList, swipeConfig } from './data';
 
 /**
  * Testimonials component
@@ -16,18 +16,8 @@ import { testimonialList } from './data';
  */
 export default function Testimonials(){
     const [current, setCurrent] = useState(0);
-    const config = {
-        delta: 10,                             // min distance(px) before a swipe starts. *See Notes*
-        preventScrollOnSwipe: false,           // prevents scroll during swipe (*See Details*)
-        trackTouch: true,                      // track touch input
-        trackMouse: true,                     // track mouse input
-        rotationAngle: 0,                      // set a rotation angle
-        swipeDuration: Infinity,               // allowable duration of a swipe (ms). *See Notes*
-        touchEventOptions: { passive: true },  // options for touch listeners (*See Details*)
-    };
     const handlers = useSwipeable({
         onSwiped: (eventData) => {
-            //console.log("User Swiped!", eventData);
             if(eventData.dir === "Right"){
                 if(current !== 0){
                     setCurrent(current === 0 ? length - 1 : current - 1);
@@ -42,7 +32,7 @@ export default function Testimonials(){
                 }
             }
         },
-        ...config,
+        ...swipeConfig,
     });
     return (
         <div style={{backgroundImage: 'url(/images/testimonials-bg.jpeg'}} className="hero border-b border-t select-none cursor-pointer">

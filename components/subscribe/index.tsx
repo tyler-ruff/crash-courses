@@ -12,7 +12,7 @@ export default function Subscribe(){
         const target = e.target as typeof e.target & {
             email: { value: string };
         };
-        console.log(target.email.value);
+        //console.log(target.email.value);
     };
     return (
         <div style={{backgroundImage: 'url(/images/damaged-glass.jpg'}} className="hero select-none">
