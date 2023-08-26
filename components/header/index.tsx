@@ -75,14 +75,14 @@ export default function Header(){
                 {
                     mainMenu.cta !== undefined && (<Cta label={mainMenu.cta.label} url={mainMenu.cta.href} />)
                 }
-                <a onClick={() => toggleBurger()}>
+                <a className="lg:hidden" onClick={() => toggleBurger()}>
                     <Burger active={isOpen} />
                 </a>
             </div>
             {
                 isOpen && (
                     <div className="h-screen">
-                        <ul className="items-stretch block mt-20 space-y-6">
+                        <ul className="items-stretch block mt-20 ml-10 space-y-6">
                             {
                                 mainMenu.nav.map((item, index) => {
                                     return (
