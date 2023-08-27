@@ -7,6 +7,8 @@ import Destinations from '@/components/destinations';
 import Gallery from '@/components/gallery';
 import Story from '@/components/story';
 import Subscribe from '@/components/subscribe';
+import { IActionButton } from '@/components/hero/data';
+import { social } from '@/config/site';
 
 export const metadata: Metadata = {
   description: 'Why wait to find yourself disappointed by a real airline? Avoid the hassle with a fake one. We offer less, while you pay more!',
@@ -15,7 +17,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero 
+        title="Book your course today so you can crash tomorrow" 
+        body="Why wait to find yourself disappointed by a real airline? Avoid the hassle with a fake one. We offer less, while you pay more!"
+        action={{
+          label: "Start A Course",
+          url: social.youtube || ``,
+          target: "youtube"
+        } as IActionButton }
+      />
       <AboutCard />
       <Subscribe />
       <Testimonials />

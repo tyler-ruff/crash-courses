@@ -35,7 +35,7 @@ export default function Footer(){
                 </p>
             </div> 
             <div>
-                <span className="footer-title">
+                <span className="footer-title select-none">
                     Navigation    
                 </span> 
                 {
@@ -49,7 +49,7 @@ export default function Footer(){
                 }
             </div>
             <div>
-                <span className="footer-title">
+                <span className="footer-title select-none">
                     Destinations    
                 </span> 
                 {

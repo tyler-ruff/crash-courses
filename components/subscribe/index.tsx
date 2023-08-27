@@ -15,7 +15,7 @@ export default function Subscribe(){
         //console.log(target.email.value);
     };
     return (
-        <div style={{backgroundImage: 'url(/images/damaged-glass.jpg'}} className="hero select-none">
+        <article aria-label="Subscirbe Form" style={{backgroundImage: 'url(/images/damaged-glass.jpg'}} className="hero select-none">
             <div className="hero-overlay bg-opacity-20"></div>
             <div className="hero mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
                 <div className="lg:flex lg:items-start lg:gap-8">
@@ -69,6 +69,6 @@ export default function Subscribe(){
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     );
 }

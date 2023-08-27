@@ -35,9 +35,9 @@ export default function Testimonials(){
         ...swipeConfig,
     });
     return (
-        <div style={{backgroundImage: 'url(/images/testimonials-bg.jpeg'}} className="hero border-b border-t select-none cursor-pointer">
+        <article aria-label="Customer Testimonials" style={{backgroundImage: 'url(/images/testimonials-bg.jpeg'}} className="hero border-b border-t select-none cursor-pointer">
             <div className="hero-overlay bg-opacity-80"></div>
-            <article {...handlers} className="container max-w-xl my-12 mx-auto px-5">
+            <div {...handlers} className="container max-w-xl my-12 mx-auto px-5">
                 <Heading section="Testimonials" title="Our Reputation is Important." />
                 <p className="text-gray-200 text-center pt-5 pb-8">
                     Hear what they’re saying about us.
@@ -62,7 +62,7 @@ export default function Testimonials(){
                         }
                     </div>
                 </div>
-            </article>
-        </div>
+            </div>
+        </article>
     );
 }

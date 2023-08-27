@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google';
 
 import { brand, config } from '@/config/site';
 
-import Header from '@/components/header'
+import Header from '@/components/header';
 import Footer from '@/components/footer';
 
-import './globals.css'
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     ]
   },
   manifest: '/manifest.json',
-}
+};
 
 export default function RootLayout({
   children,

@@ -4,7 +4,7 @@ import { IDestination } from "./data";
 
 export default function DestinationCard(props: IDestination){
     return (
-        <div className="max-w-xs p-6 rounded-md shadow-md bg-gray-50 text-gray-900">
+        <div className="max-w-xs p-6 rounded-md shadow-md bg-gray-50 text-gray-900 select-none">
             <Image
                      src={props.image}
                      width={338}

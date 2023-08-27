@@ -7,3 +7,6 @@ export interface ICta{
     url: string;
 };
 
+export interface INav{
+    pathname: string;
+}
