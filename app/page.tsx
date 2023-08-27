@@ -9,6 +9,7 @@ import Story from '@/components/story';
 import Subscribe from '@/components/subscribe';
 import { IActionButton } from '@/components/hero/data';
 import { social } from '@/config/site';
+import Book from '@/components/book';
 
 export const metadata: Metadata = {
   description: 'Why wait to find yourself disappointed by a real airline? Avoid the hassle with a fake one. We offer less, while you pay more!',
@@ -26,7 +27,8 @@ export default function Home() {
           target: "youtube"
         } as IActionButton }
       />
-      <AboutCard />
+      <Book />
+      <AboutCard onHome={true} />
       <Subscribe />
       <Testimonials />
       <Destinations />

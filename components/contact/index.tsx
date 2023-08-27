@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Contact(){
     return (
-        <div style={{backgroundImage: 'url(/images/contact-bg.jpeg'}} className="hero">
+        <article style={{backgroundImage: 'url(/images/contact-bg.jpeg'}} className="hero">
             <div className="hero-overlay bg-opacity-50"></div>
             <div>
                 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
@@ -128,9 +128,9 @@ export default function Contact(){
                             <div className="mt-4">
                                 <button
                                 type="submit"
-                                className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+                                className="inline-block w-full rounded-lg bg-black hover:bg-gray-700 active:bg-gray-600 px-5 py-3 font-medium text-white sm:w-auto"
                                 >
-                                Send Enquiry
+                                    Send
                                 </button>
                             </div>
                             </form>
@@ -138,6 +138,6 @@ export default function Contact(){
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </article>
+    );
 }

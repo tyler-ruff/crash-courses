@@ -47,7 +47,7 @@ export default function Testimonials(){
                         testimonialList.map((item, index) => {
                             return (
                                 current === index && (
-                                    <div key={index} className={index === current ? '' : ''}>
+                                    <div key={index} style={{minHeight: 450}}>
                                         <Card review={item.review} image={item.image} rating={item.rating} />
                                     </div>
                                 )
