@@ -14,11 +14,11 @@ export default function Contact(){
 								<h2 className="text-3xl text-white font-bold mb-3">
 									Email:
 								</h2>
-								<Link href="mailto:crashCoursesllc@outlook.com" className="btn btn-active bg-blue-600 hover:bg-blue-800 text-gray-200/80 border-gray-100/40 rounded-full">
+								<Link href="mailto:crashCoursesllc@outlook.com" className="btn btn-active btn-primary hover:bg-blue-800 text-gray-200/80 border-gray-100/40 rounded-full">
 									CrashCoursesllc@outlook.com
 								</Link>
 								<br />
-								<Link href="mailto:crashCoursesllc@gmail.com" className="btn btn-active bg-blue-600 hover:bg-blue-800 text-gray-200/80 border-gray-100/40 rounded-full">
+								<Link href="mailto:crashCoursesllc@gmail.com" className="btn btn-active btn-primary hover:bg-blue-800 text-gray-200/80 border-gray-100/40 rounded-full">
 									CrashCoursesllc@gmail.com
 								</Link>
 							</div>

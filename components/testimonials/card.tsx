@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { ITestimonial } from "./data";
+import Rating from "./rating";
 
 export default function Card(props: ITestimonial){
     return (
@@ -8,17 +9,15 @@ export default function Card(props: ITestimonial){
             <Image
                 src={props.image}
                 alt="Customer" 
-                width={250}
-                height={250}
-                className="w-52 h-52 rounded-full bg-gray-500" 
+                width={500}
+                height={500}
+                className="w-64 h-64 rounded-full bg-gray-500" 
             />
             <blockquote className="max-w-lg text-lg italic font-medium text-center">
                 "{props.review}"
             </blockquote>
             <div className="text-center text-gray-600">
-                <p>
-                    {props.rating} out of 5 stars
-                </p>
+                <Rating rating={props.rating} />
             </div>
         </div>
     )

@@ -26,7 +26,7 @@ export default function AboutCard(props: IAboutCard){
                         onHome !== false && (
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                                 <Link href="/about">
-                                    <button className="select-none self-center px-8 py-3 uppercase font-semibold rounded-full bg-blue-600 hover:bg-blue-800 active:bg-blue-900 text-gray-50">
+                                    <button className="select-none self-center px-8 py-3 uppercase font-semibold rounded-full btn-primary hover:bg-blue-800 active:bg-blue-900 text-gray-50">
                                         Read More
                                     </button>
                                 </Link>

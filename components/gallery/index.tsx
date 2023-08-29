@@ -6,7 +6,7 @@ import GalleryImage from "./image";
 export default function Gallery(){
     return (
         <article aria-label="Gallery" style={{backgroundImage: 'url(/images/gallery-bg.jpeg)'}} className="hero border-b border-t">
-            <div className="hero-overlay bg-opacity-80"></div>
+            <div className="hero-overlay bg-opacity-50"></div>
             <div className="py-10">
                 <div className="block py-10">
                     <Heading section="Our Gallery" title="Recent Aviation Events" />

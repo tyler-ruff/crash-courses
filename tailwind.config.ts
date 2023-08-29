@@ -15,6 +15,23 @@ const config: Config = {
       },
     },
   },
+  daisyui: {
+    themes: [
+      {
+        crash: {
+          "primary": "#00a3e8",
+          "secondary": "#ff7f26",
+          "accent": "#343233",
+          "neutral": "#2b3440",
+          "base-100": "#ffffff",
+          "info": "#3abff8",
+          "success": "#36d399",
+          "warning": "#fbbd23",
+          "error": "#ef4444",
+        },
+      },
+    ],
+  },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),

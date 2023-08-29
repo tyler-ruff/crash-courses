@@ -5,7 +5,7 @@ import Heading from "../heading";
 export default function Story(){
     return (
         <article aria-label="Our Story" style={{backgroundImage: 'url(/images/story-bg.jpeg'}} className="hero">
-            <div className="hero-overlay bg-opacity-90"></div>
+            <div className="hero-overlay bg-opacity-70"></div>
             <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
                 <div className="w-full pb-10 text-center">
                     <Heading section="Our Story" title="A Course in History" />
