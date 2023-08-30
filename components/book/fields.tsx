@@ -59,14 +59,14 @@ const PassengersOption = () => {
  * Date input
  * @returns JSX Component
  */
-const DateInput = () => {
+const DateInput = (props: any) => {
     const maxDate: string = new Date("12/31/2099").toLocaleDateString();
     const minDate: string = new Date().toLocaleDateString();
     return (
         <div className="form-control mt-2 mr-3">
             <input 
                 required 
-                title="Departure Date"
+                title={props.title}
                 type="date" 
                 className="input w-full pr-2" 
                 id="start" 
