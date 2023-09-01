@@ -4,6 +4,7 @@ import { SyntheticEvent, useRef } from "react";
 import Image from "next/image";
 
 import { social } from "@/config/site";
+import Icon from "../footer/icon";
 
 export default function Subscribe(){
     let formRef = useRef(null);
@@ -12,24 +13,21 @@ export default function Subscribe(){
         const target = e.target as typeof e.target & {
             email: { value: string };
         };
-        //console.log(target.email.value);
     };
     return (
         <article aria-label="Subscirbe Form" style={{backgroundImage: 'url(/images/damaged-glass.jpg'}} className="hero select-none">
             <div className="hero-overlay bg-opacity-20"></div>
             <div className="hero mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
                 <div className="lg:flex lg:items-start lg:gap-8">
-                    <div className="text-teal-600">
-                        <Image src="/images/crash-logo-white.svg"
-                               width={60}
-                               height={60}
-                               alt="Logo"
-                        />
+                    <div className="text-center">
+                        <div className="inline-flex">
+                            <Icon />
+                        </div>
                     </div>
                     <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
                         <div className="col-span-2">
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-900">
+                                <h2 className="text-2xl font-bold text-gray-900 lg:pt-5 text-center md:text-left">
                                     We hate delays! Be there when we take off.
                                     &nbsp;
                                     <a href={social.youtube}

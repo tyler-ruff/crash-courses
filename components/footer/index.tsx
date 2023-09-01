@@ -5,6 +5,7 @@ import { brand } from "@/config/site";
 import { mainMenu } from "@/config/menu";
 
 import { destinationsList } from "@/components/destinations/data";
+import Icon from "./icon";
 
 export default function Footer(){
     const year = new Date().getFullYear();
@@ -13,12 +14,13 @@ export default function Footer(){
         <div className="footer p-10 bg-base-200 text-base-content border-t">
             <div>
                 <div className="select-none opacity-80">
-                    <Image
+                    {/*<Image
                         src="/images/crash-logo-black.svg"
                         width={50}
                         height={50}
                         alt="Crash Courses Logo"
-                    />
+                    />*/}
+                    <Icon />
                 </div>
                 <p>
                     &copy;
