@@ -27,7 +27,7 @@ export default function Subscribe(){
                     <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
                         <div className="col-span-2">
                             <div>
-                                <h2 className="text-2xl font-bold text-gray-900 lg:pt-5 text-center md:text-left">
+                                <h2 className="text-2xl font-bold text-gray-900 mt-2 lg:pt-5 text-center md:text-left">
                                     We hate delays! Be there when we take off.
                                     &nbsp;
                                     <a href={social.youtube}
@@ -57,7 +57,7 @@ export default function Subscribe(){
 
                                         <button
                                             type="submit"
-                                            className="mt-1 w-full rounded-full sm:rounded-none sm:rounded-r-full bg-orange-500 hover:bg-orange-400 group px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
+                                            className="mt-1 w-full rounded-full sm:rounded-none sm:rounded-r-full bg-primary hover:bg-blue-500 group px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
                                             Subscribe
                                         </button>
                                     </div>

@@ -6,7 +6,9 @@ import { useSwipeable } from "react-swipeable";
 import Heading from '@/components/heading';
 import Card from './card';
 
-import { testimonialList, swipeConfig } from './data';
+import { testimonialList } from './data';
+
+import { swipeConfig } from '@/config/swipe';
 
 /**
  * Testimonials component

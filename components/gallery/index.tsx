@@ -1,3 +1,8 @@
+"use client"
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 import Heading from "@/components/heading";
 
 import { galleryData } from "./data";
@@ -11,13 +16,15 @@ export default function Gallery(){
                 <div className="block py-10">
                     <Heading section="Our Gallery" title="Recent Aviation Events" />
                 </div>
-                <div className="container flex flex-col justify-center p-4 mx-auto">
-                    <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2">
+                <div className="container relative mx-auto flex flex-col justify-center p-4">
+                    <div className="relative md:w-1/2 mx-auto">
+                    <Carousel showThumbs={false}>
                         {
                             galleryData.map((item, index) => {
                                 return (<GalleryImage key={index} index={index} url={item} />)
                             })
                         }
+                    </Carousel>
                     </div>
                 </div>
             </div>

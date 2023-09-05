@@ -11,13 +11,13 @@ export default function Story(){
                     <Heading section="Our Story" title="A Course in History" />
                 </div>
                 <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
-                    <div className="relative h-64 overflow-hidden h-80 lg:h-full md:ml-32 select-none">
+                    <div className="relative lg:h-full md:ml-32 select-none">
                         <Image
                             alt="Our Story"
                             src="/images/story-1.png"
-                            className="absolute inset-0 h-full lg:w-3/4"
-                            width={492}
-                            height={521}
+                            className="inset-0 lg:w-3/4 w-100"
+                            width={800}
+                            height={800}
                         />
                     </div>
                     <div className="lg:py-16">
@@ -44,14 +44,14 @@ export default function Story(){
                             </p>
                         </div>
                     </div>
-                    <div className="mt-8">
-                        <div className="relative h-64 overflow-hidden h-80 lg:h-full md:ml-32 select-none">
+                    <div className="mt-8 mb-12">
+                        <div className="relative h-64 h-80 lg:h-full md:ml-32 select-none">
                             <Image
                                 alt="Our Story"
                                 src="/images/story-2.png"
-                                className="absolute inset-0 h-full lg:w-3/4"
-                                width={489}
-                                height={430}
+                                className="inset-0 lg:w-3/4 w-100 h-auto"
+                                width={800}
+                                height={800}
                             />
                         </div>
                     </div>
