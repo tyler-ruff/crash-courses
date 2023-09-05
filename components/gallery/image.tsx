@@ -10,8 +10,8 @@ export default function GalleryImage(props: IGalleryImage){
                 <Image 
                     key={props.index} 
                     alt="Gallery Image" 
-                    width={500} 
-                    height={500}
+                    width={1700} 
+                    height={1700}
                     className="object-cover bg-gray-500 aspect-square" 
                     src={props.url} 
                 />

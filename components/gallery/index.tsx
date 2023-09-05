@@ -16,9 +16,9 @@ export default function Gallery(){
                 <div className="block py-10">
                     <Heading section="Our Gallery" title="Recent Aviation Events" />
                 </div>
-                <div className="container relative mx-auto flex flex-col justify-center p-4">
-                    <div className="relative md:w-1/2 mx-auto">
-                    <Carousel showThumbs={false}>
+                <div className=" p-4">
+                    <div className="relative lg:w-1/2 mx-auto">
+                    <Carousel showThumbs={false} dynamicHeight={true} emulateTouch={true} infiniteLoop={true}> 
                         {
                             galleryData.map((item, index) => {
                                 return (<GalleryImage key={index} index={index} url={item} />)
