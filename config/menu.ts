@@ -21,7 +21,13 @@ const mainMenu = {
         },
         {
             label: "Travel Agents",
-            href: "https://www.facebook.com/tripsandtravelbytanya"
+            href: "https://www.facebook.com/tripsandtravelbytanya",
+            target: "_blank"
+        },
+        {
+            label: "Patreon",
+            href: "https://patreon.com/FlyCrashCourses",
+            target: "_blank"
         }
     ] as MenuItem[],
     cta: {

@@ -21,7 +21,7 @@ const config: Config = {
         crash: {
           "primary": "#00a3e8",
           "secondary": "#ff7f26",
-          "accent": "#343233",
+          "accent": "#b95e22",
           "neutral": "#2b3440",
           "base-100": "#ffffff",
           "info": "#3abff8",

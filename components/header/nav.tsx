@@ -1,6 +1,7 @@
 import { mainMenu } from '@/config/menu';
 
 import { INav } from './data';
+import Link from 'next/link';
 
 const Nav = (props: INav) => {
     return (
@@ -9,11 +10,12 @@ const Nav = (props: INav) => {
                 mainMenu.nav.map((item, index) => {
                     return (
                         <li className="flex" key={index}>
-                            <a aria-label={item.label}
-                                href={item.href}
+                            <Link aria-label={item.label}
+                                href={item.href || ``}
+                                target={item.target}
                                 className={`menu-item flex items-center px-4 hover:text-primary mb-1 border-b-2 font-bold border-transparent ${props.pathname === item.href && `text-primary border-blue-500`}`}>
                                 {item.label}
-                            </a>
+                            </Link>
                         </li>
                     );
                 })
@@ -29,11 +31,12 @@ const MobileNav = (props: INav) => {
                 mainMenu.nav.map((item, index) => {
                     return (
                         <li className="flex" key={index}>
-                            <a aria-label={item.label}
-                                href={item.href}
+                            <Link aria-label={item.label}
+                                href={item.href || ``}
+                                target={item.target}
                                 className={`menu-item flex items-center px-4 hover:text-blue-500 mb-1 border-b-2 font-bold border-transparent ${props.pathname === item.href && `text-blue-500 border-blue-500`}`}>
                                     {item.label}
-                            </a>
+                            </Link>
                         </li>
                     );
                 })

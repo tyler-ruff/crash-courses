@@ -14,12 +14,6 @@ export default function Footer(){
         <div className="footer p-10 bg-base-200 text-base-content border-t">
             <div>
                 <div className="select-none opacity-80">
-                    {/*<Image
-                        src="/images/crash-logo-black.svg"
-                        width={50}
-                        height={50}
-                        alt="Crash Courses Logo"
-                    />*/}
                     <Icon />
                 </div>
                 <p>
@@ -37,7 +31,7 @@ export default function Footer(){
                 </p>
             </div> 
             <div>
-                <span className="footer-title select-none">
+                <span className="footer-title select-none text-accent opacity-100">
                     Navigation    
                 </span> 
                 {
@@ -51,7 +45,7 @@ export default function Footer(){
                 }
             </div>
             <div>
-                <span className="footer-title select-none">
+                <span className="footer-title select-none text-accent opacity-100">
                     Destinations    
                 </span> 
                 {

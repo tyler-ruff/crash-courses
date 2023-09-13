@@ -41,6 +41,13 @@ export default function Header(){
         }
     }, [size.width]);
 
+    useEffect(() => {
+        if(isOpen){
+            setIsOpen(false);
+            document.body.style.overflowY = "scroll";
+        }
+    }, [pathname]);
+
     const Logo = () => {
         return (
             <Link href="/" 

@@ -40,7 +40,7 @@ export default function BookingForm(){
         <div>
             {!error ? (
             <form onSubmit={submitForm} className="w-full">
-                <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="grid grid-cols-1 md:grid-cols-3 space-y-2">
                     <SelectOption label="From" />
                     <SelectOption label="To" />
                     <DateInput title="Departure Date" />

@@ -16,15 +16,24 @@ export default function Gallery(){
                 <div className="block py-10">
                     <Heading section="Our Gallery" title="Recent Aviation Events" />
                 </div>
-                <div className=" p-4">
-                    <div className="relative lg:w-1/2 mx-auto">
-                    <Carousel showThumbs={false} dynamicHeight={true} emulateTouch={true} infiniteLoop={true}> 
-                        {
-                            galleryData.map((item, index) => {
-                                return (<GalleryImage key={index} index={index} url={item} />)
-                            })
-                        }
-                    </Carousel>
+                <div className="p-4">
+                    <div className="relative lg:w-1/2 md:mx-auto md:hidden">
+                        <Carousel showThumbs={false} dynamicHeight={true} emulateTouch={true} infiniteLoop={true}> 
+                            {
+                                galleryData.map((item, index) => {
+                                    return (<GalleryImage key={index} index={index} url={item} />)
+                                })
+                            }
+                        </Carousel>
+                    </div>
+                    <div className="hidden container md:flex flex-col justify-center p-4 mx-auto">
+                        <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 sm:grid-cols-2">
+                            {
+                                galleryData.map((item, index) => {
+                                    return (<GalleryImage key={index} index={index} url={item} />)
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
