@@ -13,7 +13,7 @@ export default function AboutCard(props: IAboutCard){
     return (
         <article aria-label="About Us" className="bg-gray-100 text-gray-800">
             <div className="container flex flex-col justify-center p-6 px-8 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-                <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-2xl lg:text-left">
+                <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-3xl lg:text-left">
                     <h3 className="uppercase text-primary text-xl py-5">
                         Welcome to Fly crash corses
                     </h3>
