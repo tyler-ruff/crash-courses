@@ -46,7 +46,7 @@ export default function Subscribe(){
                                 </label>
 
                                 <div className="p-2 sm:flex sm:items-center">
-                                    <div className="sm:flex w-full lg:ring ring-orange-500 focus-within:ring-orange-700 rounded-full">
+                                    <div className="sm:flex w-full lg:ring ring-secondary focus-within:ring-primary rounded-full">
                                         <input
                                             type="email"
                                             id="UserEmail"
@@ -57,7 +57,7 @@ export default function Subscribe(){
 
                                         <button
                                             type="submit"
-                                            className="mt-1 w-full rounded-full sm:rounded-none sm:rounded-r-full bg-primary hover:bg-blue-500 group px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
+                                            className="mt-1 w-full rounded-full sm:rounded-none sm:rounded-r-full bg-primary hover:bg-secondary group px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
                                             Subscribe
                                         </button>
                                     </div>

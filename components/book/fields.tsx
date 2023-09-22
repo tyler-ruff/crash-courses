@@ -84,8 +84,8 @@ const DateInput = (props: any) => {
  */
 const SubmitButton = () => {
     return (
-        <div className="flex my-2">
-            <button type="submit" className="mt-1 w-full rounded-full btn-primary border border-orange-300 hover:border-gray-200 group px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
+        <div className="block my-2">
+            <button type="submit" className="mt-1 ml-3 w-full rounded-full btn-primary border border-orange-300 hover:bg-secondary active:ring ring-orange-200 group px-16 lg:px-20 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
                 Search
             </button>
         </div>

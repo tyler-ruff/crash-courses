@@ -12,10 +12,10 @@ export default function AboutCard(props: IAboutCard){
 
     return (
         <article aria-label="About Us" className="bg-gray-100 text-gray-800">
-            <div className="container flex flex-col justify-center p-6 px-8 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-                <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-3xl lg:text-left">
+            <div className="container flex flex-col justify-center p-6 px-8 mx-auto sm:py-12 lg:py-16 lg:flex-row lg:justify-between">
+                <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-2xl lg:text-left">
                     <h3 className="uppercase text-primary text-xl py-5">
-                        Welcome to Fly crash corses
+                        Welcome to Fly crashcourses
                     </h3>
                     <h1 className="text-4xl font-bold lead sm:text-4xl select-none">
                         Meet our expert aviation maintenance team
@@ -29,7 +29,7 @@ export default function AboutCard(props: IAboutCard){
                         onHome !== false && (
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                                 <Link href="/about">
-                                    <button className="select-none self-center px-8 py-3 uppercase font-semibold rounded-full btn-primary hover:bg-blue-800 active:bg-blue-900 text-gray-50">
+                                    <button className="select-none self-center px-8 py-3 uppercase font-semibold rounded-full btn-primary hover:bg-secondary active:ring ring-orange-200 text-gray-50">
                                         Read More
                                     </button>
                                 </Link>
@@ -41,9 +41,9 @@ export default function AboutCard(props: IAboutCard){
                     <Image 
                         src="/images/tadd-and-fernando-main.png" 
                         alt="Tadd and Fernando"
-                        width={492}
-                        height={320}
-                        className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+                        width={500}
+                        height={400}
+                        className="object-contain h-72 sm:h-80 lg:h-120 xl:h-120 2xl:h-140" />
                 </div>
             </div>
         </article>

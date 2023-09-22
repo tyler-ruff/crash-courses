@@ -14,7 +14,7 @@ export default function Destinations(){
                             <Heading section="Our Destinations" title="Great Deals" />
                         </div>
                         <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-50">
-                            Why drive to the casinos when you can get there in twice the time and price.
+                            Why drive to the casinos when you can get there in twice the time and triple the price.
                         </p>
                         <div className="flex flex-wrap justify-center md:space-x-5 space-y-4 md:space-y-2 lg:space-y-0">
                             {
