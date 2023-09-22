@@ -10,7 +10,7 @@
 
 * {
   scrollbar-width: auto;
-  scrollbar-color: #1b54b1 #ffffff;
+  scrollbar-color: #00a3e8 #ffffff;
 }
 
 *::-webkit-scrollbar {
@@ -22,7 +22,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #1b54b1;
+  background-color: #00a3e8;
   border-radius: 10px;
   border: 3px solid #ffffff;
 }

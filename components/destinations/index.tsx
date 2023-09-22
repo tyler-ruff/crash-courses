@@ -6,7 +6,7 @@ import { destinationsList } from "./data";
 export default function Destinations(){
     return (
         <article aria-label="Destinations" style={{backgroundImage: 'url(/images/destinations-bg.png)'}} className="hero">
-            <div className="hero-overlay bg-opacity-40"></div>
+            <div className="hero-overlay bg-opacity-30"></div>
             <div>
                 <div>
                     <div className="container flex flex-col items-center px-4 py-10 md:py-16 lg:pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">
