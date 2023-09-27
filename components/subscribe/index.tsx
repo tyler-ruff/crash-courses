@@ -1,7 +1,6 @@
 "use client"
 
 import { SyntheticEvent, useRef } from "react";
-import Image from "next/image";
 
 import { social } from "@/config/site";
 import Icon from "../footer/icon";
@@ -17,7 +16,7 @@ export default function Subscribe(){
     return (
         <article aria-label="Subscirbe Form" style={{backgroundImage: 'url(/images/damaged-glass.jpg'}} className="hero select-none">
             <div className="hero-overlay bg-opacity-20"></div>
-            <div className="hero mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+            <div className="hero mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
                 <div className="lg:flex lg:items-start lg:gap-8">
                     <div className="text-center">
                         <div className="inline-flex">

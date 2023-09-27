@@ -12,7 +12,7 @@ import { ISelectOption } from "./data";
  */
 const SelectOption = (props: ISelectOption) => {
     return (
-        <div className="form-control my-2 md:mr-3">
+        <div className="form-control my-2 mr-0 md:mr-3">
             <select required defaultValue={``} className="select select-bordered w-full max-w-xs">
                 <option value="" disabled>{props.label}</option>
                 {
@@ -37,7 +37,7 @@ const SelectOption = (props: ISelectOption) => {
 const PassengersOption = () => {
     const passengersData = Array.from(Array(maxPassNum).keys());
     return (
-        <div className="form-control mr-3">
+        <div className="form-control mr-0 md:mr-3 ">
             <select required defaultValue={``}  className="select select-bordered w-full max-w-xs">
                 <option disabled value="">Passengers</option>
                 {
@@ -62,8 +62,12 @@ const PassengersOption = () => {
 const DateInput = (props: any) => {
     const maxDate: string = new Date("12/31/2099").toLocaleDateString();
     const minDate: string = new Date().toLocaleDateString();
+    
     return (
-        <div className="form-control mr-3">
+        <div className="form-control mr-0 md:mr-3">
+            <label className="md:hidden">
+                {props.title}
+            </label>
             <input 
                 required 
                 title={props.title}
@@ -71,7 +75,7 @@ const DateInput = (props: any) => {
                 type="date" 
                 className="input w-full pr-2" 
                 min={minDate}
-                max={maxDate} 
+                max={maxDate}
             />
         </div>
     );

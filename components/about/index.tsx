@@ -28,7 +28,7 @@ export default function AboutCard(props: IAboutCard){
                     {
                         onHome !== false && (
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                                <Link href="/about">
+                                <Link target="_blank" href="https://www.youtube.com/@FlyCrashCourses/videos">
                                     <button className="select-none self-center px-8 py-3 uppercase font-semibold rounded-full btn-primary hover:bg-secondary active:ring ring-orange-200 text-gray-50">
                                         Read More
                                     </button>
@@ -37,7 +37,7 @@ export default function AboutCard(props: IAboutCard){
                         )
                     }
                 </div>
-                <div className="flex select-none items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                <div className="flex select-none items-center justify-center p-0 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
                     <Image 
                         src="/images/tadd-and-fernando-main.png" 
                         alt="Tadd and Fernando"
