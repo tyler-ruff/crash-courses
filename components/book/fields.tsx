@@ -65,9 +65,6 @@ const DateInput = (props: any) => {
     
     return (
         <div className="form-control mr-0 md:mr-3">
-            <label className="md:hidden">
-                {props.title}
-            </label>
             <input 
                 required 
                 title={props.title}
