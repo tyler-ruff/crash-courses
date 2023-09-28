@@ -16,14 +16,14 @@ export default function Subscribe(){
     return (
         <article aria-label="Subscirbe Form" style={{backgroundImage: 'url(/images/damaged-glass.jpg'}} className="hero select-none">
             <div className="hero-overlay bg-opacity-20"></div>
-            <div className="hero mx-auto max-w-screen-xl px-4 py-2 sm:px-6 lg:px-8">
+            <div className="hero mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="lg:flex lg:items-start lg:gap-8">
                     <div className="text-center">
                         <div className="inline-flex">
                             <Icon />
                         </div>
                     </div>
-                    <div className="mt-2 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
+                    <div className="grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
                         <div className="col-span-2">
                             <div>
                                 <h2 className="text-2xl font-bold text-gray-900 md:mt-10 lg:pt-5 text-center md:text-left">
