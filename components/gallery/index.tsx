@@ -14,7 +14,7 @@ export default function Gallery(){
             <div className="hero-overlay bg-opacity-50"></div>
             <div className="py-10">
                 <div className="block py-10">
-                    <Heading section="Our Gallery" title="Recent Aviation Events" />
+                    <Heading section="Our Gallery" title="Recent aviation events" />
                 </div>
                 <div className="p-4">
                     <div className="relative lg:w-1/2 md:mx-auto md:hidden">

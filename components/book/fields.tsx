@@ -12,7 +12,7 @@ import { ISelectOption } from "./data";
  */
 const SelectOption = (props: ISelectOption) => {
     return (
-        <div className="form-control my-2 mr-0 md:mr-3">
+        <div className="form-control md:my-2 mr-0 md:mr-3">
             <select required defaultValue={``} className="select select-bordered w-full max-w-xs">
                 <option value="" disabled>{props.label}</option>
                 {
@@ -86,7 +86,7 @@ const DateInput = (props: any) => {
 const SubmitButton = () => {
     return (
         <div className="block my-2">
-            <button type="submit" className="mt-1 ml-3 w-full rounded-full btn-primary border border-orange-300 hover:bg-secondary active:ring ring-orange-200 group px-16 lg:px-20 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
+            <button type="submit" className="mt-1 md:ml-3 w-full rounded-full btn-primary border border-orange-300 hover:bg-secondary active:ring ring-orange-200 group px-16 lg:px-20 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
                 Search
             </button>
         </div>

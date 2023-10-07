@@ -8,7 +8,7 @@ export default function Story(){
             <div className="hero-overlay bg-opacity-70"></div>
             <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
                 <div className="w-full pb-10 text-center">
-                    <Heading section="Our Story" title="A Course in History" />
+                    <Heading section="Our Story" title="A course in history" />
                 </div>
                 <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0">
                     <div className="relative lg:h-full md:ml-32 select-none">

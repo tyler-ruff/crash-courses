@@ -26,7 +26,7 @@ export const testimonialList = [
     },
     {
         image: "/images/testimonials/customer-3.webp",
-        rating: Rating.one,
+        rating: Rating.zero,
         review: "CRASHCOURSES is a disaster! Heard nothing but horrible things. Would never fly with these people… Terrible airline, and I know more about crashes than the airlines do. Believe me. Very Sad!"
     }
 ] as ITestimonial[];
