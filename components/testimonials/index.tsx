@@ -52,12 +52,23 @@ export default function Testimonials(){
                     Hear what they’re saying about us.
                 </p>
                 <div className="flex flex-col items-center w-full space-y-8 rounded-md lg:h-full text-gray-800">
-                    <Carousel showThumbs={false} dynamicHeight={false} emulateTouch={true} infiniteLoop={true} showArrows={false} showStatus={false}>
+                    <Carousel 
+                        showThumbs={false} 
+                        dynamicHeight={false} 
+                        emulateTouch={true} 
+                        infiniteLoop={true} 
+                        showArrows={false} 
+                        showStatus={false}
+                    >
                         {
                             testimonialList.map((item, index) => {
                                 return (
                                     <div key={index} className="inline-flex max-w-sm p-6 lg:p-8 bg-gray-50 my-10 rounded-md" style={{minHeight: 450}}>
-                                        <Card review={item.review} image={item.image} rating={item.rating} />
+                                        <Card 
+                                            review={item.review} 
+                                            image={item.image} 
+                                            rating={item.rating} 
+                                        />
                                     </div>
                                 );
                             })
