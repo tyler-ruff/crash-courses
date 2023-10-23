@@ -12,7 +12,7 @@ export default function AboutCard(props: IAboutCard){
 
     return (
         <article aria-label="About Us" className="bg-gray-100 text-gray-800">
-            <div className="container flex flex-col justify-center p-6 px-10 2xl:px-24 mx-auto sm:py-12 lg:py-16 lg:flex-row lg:justify-between">
+            <div className="container flex flex-col justify-center md:p-6 md:px-10 2xl:px-24 mx-auto sm:py-12 lg:py-16 lg:flex-row lg:justify-between">
                 <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-lg xl:max-w-2xl lg:text-left">
                     <h3 className="uppercase text-primary text-xl py-5">
                         Welcome to Fly crashcourses
@@ -37,7 +37,7 @@ export default function AboutCard(props: IAboutCard){
                         )
                     }
                 </div>
-                <div className="flex select-none items-center justify-center p-0 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                <div className="flex select-none items-center justify-center p-0 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 px-5 md:px-0">
                     <Image 
                         src="/images/tadd-and-fernando-main.png" 
                         alt="Tadd and Fernando"
