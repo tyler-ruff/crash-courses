@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useSwipeable } from "react-swipeable";
 
-import Heading from '@/components/heading';
 import Card from './card';
 
 import { testimonialList } from './data';
@@ -38,7 +37,7 @@ export default function Testimonials(){
         ...swipeConfig,
     });
     return (
-        <article aria-label="Customer Testimonials" style={{backgroundImage: 'url(/images/testimonials-bg.jpeg'}} className="hero border-b border-t select-none cursor-pointer">
+        <article aria-label="Customer Testimonials" style={{ backgroundImage: 'url(/images/testimonials-bg.jpeg'}} className="hero border-b border-t select-none cursor-pointer">
             <div className="hero-overlay bg-opacity-50"></div>
             <div {...handlers} className="container max-w-sm lg:max-w-xl my-12 mx-auto px-5">
                 <div aria-label="Testimonials" className="block w-full text-center">

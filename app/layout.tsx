@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   },
   description: config.description,
   applicationName: config.name,
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
   keywords: ['crash', 'courses', 'flight', 'school', 'aviation'],
   publisher: brand.company,
   icons: {
