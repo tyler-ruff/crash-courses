@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Hero 
         title="Book your course today so you can crash tomorrow" 
         body="Why wait to find yourself disappointed by a real airline? Avoid the hassle with a fake one. We offer less, while you pay more!"
