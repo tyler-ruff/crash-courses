@@ -53,11 +53,11 @@ export default function Header(){
             <Link href="/" 
                 aria-label="Back to homepage"
                 title={config.name} 
-                className="flex items-center p-2 pt-5 hover:opacity-75 select-none">
+                className="flex items-center p-2 pb-7 pt-8 hover:opacity-75 select-none">
                 <Image 
                     src="/images/page-logo.png" 
-                    width={125} 
-                    height={125} 
+                    width={138} 
+                    height={138} 
                     alt="Crash Logo" 
                 />
             </Link>
