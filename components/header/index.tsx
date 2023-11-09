@@ -53,11 +53,11 @@ export default function Header(){
             <Link href="/" 
                 aria-label="Back to homepage"
                 title={config.name} 
-                className="flex items-center p-2 hover:opacity-75 select-none">
+                className="flex items-center p-2 pt-5 hover:opacity-75 select-none">
                 <Image 
-                    src="/images/crash-logo.png" 
-                    width={40} 
-                    height={40} 
+                    src="/images/page-logo.png" 
+                    width={120} 
+                    height={120} 
                     alt="Crash Logo" 
                 />
             </Link>
@@ -65,7 +65,7 @@ export default function Header(){
     }
 
     return (
-        <nav id={`nav-${mainMenu._id}`} role="navigation" className="p-4 bg-gray-100 text-gray-800">
+        <nav id={`nav-${mainMenu._id}`} role="navigation" className="p-4 bg-white text-gray-800">
             <div className="container flex justify-between h-16 mx-auto">
                 <Logo />
                 <Nav pathname={pathname} />

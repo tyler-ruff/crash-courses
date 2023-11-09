@@ -4,7 +4,7 @@ import BookingForm from "./form";
 export default function Book(){
     return (
         <article aria-label="Booking Form" style={{backgroundImage: 'url(/images/damaged-glass.jpg'}} className="hero border-t select-none">
-            <div className="hero-overlay bg-orange-800 bg-opacity-30"></div>
+            <div className="hero-overlay bg-orange-800 bg-opacity-0"></div>
             <div style={{minHeight: 270}} className="hero mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
                 <div className="lg:flex lg:items-start lg:gap-8">
                     <div className="grid grid-cols-2 lg:grid-cols-5 lg:gap-y-5">
