@@ -39,7 +39,7 @@ export default function AboutCard(props: IAboutCard){
                 </div>
                 <div className="flex select-none items-center justify-center p-0 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 px-5 md:px-0">
                     <Image 
-                        src="/images/tadd-and-fernando-main-2.jpg" 
+                        src="/images/tadd-and-fernando-main.png" 
                         alt="Tadd and Fernando"
                         width={600}
                         height={600}
