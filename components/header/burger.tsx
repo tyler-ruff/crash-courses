@@ -6,7 +6,7 @@ export default function Burger(props: IBurger){
     return (
         <button
             aria-label="Toggle mobile menu"
-            className="p-4 lg:hidden">
+            className="p-4 pt-5 pr-6 lg:hidden">
             <div
                 className={`${genericHamburgerLine} ${
                 isOpen

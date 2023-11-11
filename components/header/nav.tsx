@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Nav = (props: INav) => {
     return (
-        <ul className="items-stretch hidden space-x-3 lg:flex select-none">
+        <ul className="items-stretch hidden space-x-3 lg:flex select-none pt-2">
             {
                 mainMenu.nav.map((item, index) => {
                     return (
