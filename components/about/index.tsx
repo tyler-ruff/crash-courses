@@ -21,7 +21,7 @@ export default function AboutCard(props: IAboutCard){
                         Meet our expert aviation maintenance team
                     </h1>
                     <p className="mt-6 mb-8 text-lg sm:mb-12">
-                        We may be horrible at running an airline. However, we are a team of very knowledgeable and experienced aircraft mechanics. 
+                        We may be horrible at running our own airline. However, we are a team of very knowledgeable and experienced aircraft mechanics. 
                         Our purpose is to promote aviation maintenance as a career. Point you in the right direction to get started. Help you obtain your airframe and powerplant license. 
                         Provide professional insight to students and current aircraft mechanics.
                     </p>
