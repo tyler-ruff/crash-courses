@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { social } from '@/config/site';
+
 import { IAboutCard } from "./data";
 
 export default function AboutCard(props: IAboutCard){
@@ -28,7 +30,7 @@ export default function AboutCard(props: IAboutCard){
                     {
                         onHome !== false && (
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                                <Link target="_blank" href="https://www.youtube.com/@FlyCrashCourses/videos">
+                                <Link target="_blank" href={social.youtube || ``}>
                                     <button className="select-none self-center px-8 py-3 uppercase font-semibold rounded-full btn-primary hover:bg-secondary active:ring ring-orange-200 text-gray-50">
                                         Read More
                                     </button>
