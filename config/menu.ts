@@ -1,4 +1,5 @@
 import { Menu, MenuItem } from "@/lib/types/site";
+import { social } from '@/config/site';
 
 const mainMenu = {
     _id: "root",
@@ -20,8 +21,8 @@ const mainMenu = {
             href: "/gallery"
         },
         {
-            label: "Travel Agents",
-            href: "https://www.facebook.com/tripsandtravelbytanya",
+            label: "YouTube",
+            href: social.youtube || ``,
             target: "_blank"
         },
         {
