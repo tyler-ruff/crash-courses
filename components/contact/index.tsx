@@ -33,7 +33,7 @@ export default function Contact(){
 									Become a Patron
 								</Link>
 								<br />
-								<Link href="https://www.youtube.com/@FlyCrashCourses/" target="_blank" className="btn btn-active btn-primary hover:bg-blue-800 text-gray-200/80 border-gray-100/40 rounded-full">
+								<Link href={social.youtube || ``} target="_blank" className="btn btn-active btn-primary hover:bg-blue-800 text-gray-200/80 border-gray-100/40 rounded-full">
 									Youtube Channel
 								</Link>
 							</div>
