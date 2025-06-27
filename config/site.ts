@@ -11,7 +11,7 @@ const social = {
     instagram: "https://www.instagram.com/blazed_labs/",
     github: "https://github.com/blazed-labs",
     twitter: "https://twitter.com/BlazedLabs",
-    youtube: "https://www.youtube.com/@FlyCrashCourses/videos"
+    youtube: "https://www.youtube.com/@CoopersCrashCourses"
 } as Social
 
 const brand = {
