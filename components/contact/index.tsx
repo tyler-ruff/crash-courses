@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link";
+import { social } from '@/config/site';
 
 export default function Contact(){
     return (
