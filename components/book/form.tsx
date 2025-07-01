@@ -43,9 +43,9 @@ export default function BookingForm(){
                 <div className="grid grid-cols-1 md:grid-cols-3 space-y-2">
                     <SelectOption label="From" />
                     <SelectOption label="To" />
+                    <PassengersOption />
                     <DateInput title="Departure Date" />
                     <DateInput title="Arrival Date" />
-                    <PassengersOption />
                     <SubmitButton />
                 </div>
             </form>

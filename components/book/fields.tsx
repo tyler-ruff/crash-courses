@@ -86,7 +86,7 @@ const DateInput = (props: any) => {
 const SubmitButton = () => {
     return (
         <div className="block my-2">
-            <button type="submit" className="mt-1 md:ml-3 w-full rounded-full btn-primary border border-orange-300 hover:bg-secondary active:ring ring-orange-200 group px-16 lg:px-20 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
+            <button type="submit" className="mt-1 md:ml-3 w-full rounded-full btn-primary border border-orange-300 hover:bg-secondary hover:border-orange-300 active:ring ring-orange-200 group px-16 lg:px-20 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none sm:mt-0 sm:w-auto sm:shrink-0">
                 Search
             </button>
         </div>
